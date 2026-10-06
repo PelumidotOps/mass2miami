@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | MASS2MIAMI LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: var(--bg-dark);">
+
+  <!-- Site Header (Dark Theme) -->
+  <header class="site-header dark-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">MASS2MIAMI LLC</a>
+      
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="accomplishment.html" class="nav-link">Accomplishment</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-nav" data-open-modal="register">Register</button>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="service.html" class="nav-link">Service</a>
+      <a href="accomplishment.html" class="nav-link">Accomplishment</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+    <button class="btn btn-spruce" style="width: 100%;" data-open-modal="register">Register Now</button>
+  </div>
+
+  <main>
+    <!-- Contact Immersive Screen matching Figma Node 5911:2174 -->
+    <div class="contact-page-wrap">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Left Info Column -->
+          <div class="contact-hero-info">
+            <div>
+              <span class="eyebrow light">Get In Touch</span>
+              <h1 class="contact-heading">Contact us</h1>
+            </div>
+
+            <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.6; max-width: 480px;">
+              Mass2Miami works closely with existing organizations and institutions to build community learning laboratories. Reach out to discuss leadership development, curriculum, or partnerships.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:mass2miamicg@gmail.com">mass2miamicg@gmail.com</a>
+              </div>
+
+              <div class="contact-item">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Direct Office Line Available Upon Request</span>
+              </div>
+
+              <div class="contact-item">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Massachusetts & Florida Locations</span>
+              </div>
+            </div>
+
+            <!-- Background highlight card -->
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-top: 1rem; max-width: 480px; box-shadow: var(--shadow-md);">
+              <img src="images/frame_1618873052_82243782.png" alt="Collaborative meeting and consulting" style="width: 100%; height: 180px; object-fit: cover;">
+            </div>
+          </div>
+
+          <!-- Right Form Column (Figma Frame 1618873046) -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contactForm">
+              <div class="form-field">
+                <label class="form-label" for="contactName">Name</label>
+                <input type="text" id="contactName" class="form-input" required placeholder="Your full name">
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" class="form-input" required placeholder="email@example.com">
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="contactPhone">Phone</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="(555) 000-0000">
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="contactMessage">Message</label>
+                <textarea id="contactMessage" class="form-input" required placeholder="Tell us about your organization or inquiry..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" style="border-top: 1px solid var(--border-dark);">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>MASS2MIAMI LLC</h4>
+          <p>Mass2Miami works closely with existing organizations and institutions to build community learning laboratories. Book a call to discuss partnership.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Help</h5>
+          <ul class="footer-nav">
+            <li><a href="service.html">Explore</a></li>
+            <li><a href="service.html#schedule">The Academy</a></li>
+            <li><a href="index.html#offerings">FAQ</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+            <button type="submit" class="newsletter-btn">
+              Subscribe Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © Copyright 2026, All Rights Reserved by Mass2Miami Consultant Group LLC
+      </div>
+    </div>
+  </footer>
+
+  <!-- Registration Modal -->
+  <div class="modal-overlay" id="registerModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close dialog">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Register with Mass2Miami</h3>
+      <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Join an upcoming session or cohort to elevate your leadership.</p>
+      
+      <form id="modalRegisterForm">
+        <div class="form-field">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" required placeholder="Jane Doe">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" required placeholder="jane@organization.org">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Select Track / Session</label>
+          <select id="modalTrackSelect" class="form-input" style="background: transparent;" required>
+            <option value="Professional Development">Professional Development Training</option>
+            <option value="Academy Session">The Academy Monthly Workshop</option>
+            <option value="Small Business Coaching">Small Business Coaching</option>
+            <option value="Youth Mentorship">Youth & Education Program</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit-btn">Complete Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "mass2miami",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Mass2Miami official website brought to life from Figma design",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node build.mjs",
+    "start": "node server.mjs"
+  }
+}

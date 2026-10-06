@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | MASS2MIAMI LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">MASS2MIAMI LLC</a>
+      
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="service.html" class="nav-link active">Service</a>
+        <a href="accomplishment.html" class="nav-link">Accomplishment</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-nav" data-open-modal="register">Register</button>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="service.html" class="nav-link active">Service</a>
+      <a href="accomplishment.html" class="nav-link">Accomplishment</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <button class="btn btn-spruce" style="width: 100%;" data-open-modal="register">Register Now</button>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">What We Offer</span>
+          <h1 class="hero-title">Comprehensive training and development across every stage of growth</h1>
+          <p class="hero-subtitle">
+            From K-12 career exploration to professional development and business coaching, Mass2Miami delivers culturally sensitive, results-driven programs tailored to your organization's unique needs.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-open-modal="register">Book a consultation</button>
+          </div>
+        </div>
+
+        <!-- 4-Image Gallery Grid -->
+        <div class="service-gallery-grid">
+          <div class="gallery-card">
+            <img src="images/frame_7854_50854838.png" alt="Youth workshop and training">
+          </div>
+          <div class="gallery-card">
+            <img src="images/frame_1618873002_86b08974.png" alt="Collaborative team leadership">
+          </div>
+          <div class="gallery-card">
+            <img src="images/frame_1618873003_9fc94536.png" alt="Mentoring students in education">
+          </div>
+          <div class="gallery-card">
+            <img src="images/frame_1618873004_422c34fa.png" alt="Community training laboratory">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Youth & Education Programs Section -->
+    <section class="service-programs-section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem;">
+          <div>
+            <h2 class="section-title">Youth & Education Programs</h2>
+            <p class="section-desc">Alternative career pathways and immersive learning experiences designed for K-12 students and school districts.</p>
+          </div>
+          <div>
+            <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.6;">
+              Our premier professional development series for nonprofit leaders, staff, and board members. Monthly workshops covering essential topics in organizational management, fundraising, strategic planning, governance, and mission-driven leadership.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+          <div class="program-cards-grid" style="margin-top: 0;">
+            <div class="program-card">
+              <h4>"Teacher for a Day" Program</h4>
+              <p>8-week intensive program teaching students how to start a business, understand financial fundamentals, and develop entrepreneurial thinking.</p>
+            </div>
+
+            <div class="program-card">
+              <h4>"Nurse for a Day" Program</h4>
+              <p>K-8 exploration of healthcare career pathways and professional roles in the nursing and health sectors.</p>
+            </div>
+
+            <div class="program-card">
+              <h4>Academic Services</h4>
+              <p>One-on-one and small group tutoring in mathematics, reading, writing, science, and technology for grades 2-8. All sessions facilitated and supervised by certified teachers.</p>
+            </div>
+
+            <div class="program-card">
+              <h4>Academic Enrollment Workshops</h4>
+              <p>Comprehensive preparation for academic success including ACT/SAT preparation, MCAS/EOC test readiness, FASFA guidance, scholarship workshops, and financial literacy for students and parents.</p>
+            </div>
+
+            <div class="program-card" style="grid-column: 1 / -1;">
+              <h4>Professional Development Training</h4>
+              <p>Customized training modules in small business development, leadership, entrepreneurship, social responsibility, diversity & inclusion, and cultural responsiveness.</p>
+            </div>
+          </div>
+
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+            <img src="images/union_a1850875.png" alt="Youth education pathways" style="width: 100%; height: auto; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Academy Schedule & Calendar -->
+    <section id="schedule" class="section-calendar">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Academy Schedule</span>
+          <h2 class="section-title">Academy Schedule</h2>
+          <p class="section-desc" style="margin: 0.5rem auto 0;">
+            Monthly workshops (third Tuesday of each month) on essential nonprofit management topics. Register for individual sessions or commit to the full year for cohort pricing.
+          </p>
+        </div>
+
+        <!-- Calendar Component matching Figma Frame 'Calendar' -->
+        <div class="calendar-widget">
+          <div class="calendar-controls-bar">
+            <div class="cal-nav-group">
+              <button class="cal-btn btn-cal-today">Today</button>
+              <button class="cal-btn btn-cal-back">&larr; Back</button>
+              <button class="cal-btn btn-cal-next">Next &rarr;</button>
+            </div>
+
+            <div class="cal-range-label">10 July 2026 - 16 July 2026</div>
+
+            <div class="cal-view-group">
+              <button class="cal-btn cal-view-btn">Month</button>
+              <button class="cal-btn cal-view-btn active">Week</button>
+              <button class="cal-btn cal-view-btn">Day</button>
+            </div>
+          </div>
+
+          <div class="calendar-grid-wrap">
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th style="width: 80px;">Time</th>
+                  <th>Sunday 07/10</th>
+                  <th>Monday 07/11</th>
+                  <th>Tuesday 07/12</th>
+                  <th>Wednesday 07/13</th>
+                  <th>Thursday 07/14</th>
+                  <th>Friday 07/15</th>
+                  <th>Saturday 07/16</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time-col">6:00 AM</td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">06:00 AM - 02:00 PM</span>
+                      <strong class="cal-event-title">Executive Leadership & Strategy Workshop</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">06:00 AM - 12:00 PM</span>
+                      <strong class="cal-event-title">Leadership Foundations</strong>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">06:00 AM - 11:00 AM</span>
+                      <strong class="cal-event-title">Nonprofit Executive Coaching</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="time-col">7:00 AM</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">07:00 AM - 12:00 PM</span>
+                      <strong class="cal-event-title">Financial Literacy & FAFSA Mastery</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="time-col">8:00 AM</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">08:00 AM - 02:00 PM</span>
+                      <strong class="cal-event-title">Nonprofit Board Governance</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">08:00 AM - 04:00 PM</span>
+                      <strong class="cal-event-title">Civic Engagement Mentorship</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="time-col">9:00 AM</td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">09:00 AM - 06:00 PM</span>
+                      <strong class="cal-event-title">Community Learning Lab Intensive</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">09:00 AM - 04:00 PM</span>
+                      <strong class="cal-event-title">Digital Literacy Lab</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="time-col">10:00 AM</td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">10:00 AM - 03:00 PM</span>
+                      <strong class="cal-event-title">K-12 Career Pathways Mentorship</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">10:00 AM - 02:00 PM</span>
+                      <strong class="cal-event-title">Academic Counseling Seminar</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="time-col">11:00 AM</td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">11:00 AM - 05:00 PM</span>
+                      <strong class="cal-event-title">Cultural Responsiveness & Diversity</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <div class="cal-event-pill">
+                      <span class="cal-event-time">11:00 AM - 02:00 PM</span>
+                      <strong class="cal-event-title">Strategic Planning Lab</strong>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>MASS2MIAMI LLC</h4>
+          <p>Mass2Miami works closely with existing organizations and institutions to build community learning laboratories. Book a call to discuss partnership.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Help</h5>
+          <ul class="footer-nav">
+            <li><a href="service.html">Explore</a></li>
+            <li><a href="service.html#schedule">The Academy</a></li>
+            <li><a href="index.html#offerings">FAQ</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+            <button type="submit" class="newsletter-btn">
+              Subscribe Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © Copyright 2026, All Rights Reserved by Mass2Miami Consultant Group LLC
+      </div>
+    </div>
+  </footer>
+
+  <!-- Registration Modal -->
+  <div class="modal-overlay" id="registerModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close dialog">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Register with Mass2Miami</h3>
+      <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Join an upcoming session or cohort to elevate your leadership.</p>
+      
+      <form id="modalRegisterForm">
+        <div class="form-field">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" required placeholder="Jane Doe">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" required placeholder="jane@organization.org">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Select Track / Session</label>
+          <select id="modalTrackSelect" class="form-input" style="background: transparent;" required>
+            <option value="Professional Development">Professional Development Training</option>
+            <option value="Academy Session">The Academy Monthly Workshop</option>
+            <option value="Small Business Coaching">Small Business Coaching</option>
+            <option value="Youth Mentorship">Youth & Education Program</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit-btn">Complete Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
