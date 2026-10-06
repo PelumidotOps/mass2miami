@@ -1,6 +1,5 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "public": true
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true
 }
