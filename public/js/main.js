@@ -187,10 +187,31 @@ function initCalendar() {
     });
   });
 
+  // Mobile Day Tab Chips
+  const dayChips = calWidget.querySelectorAll('.cal-day-chip');
+  const dayEvents = calWidget.querySelectorAll('.cal-day-events');
+
+  dayChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const targetDay = chip.getAttribute('data-day');
+      dayChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+
+      dayEvents.forEach(events => {
+        if (events.getAttribute('data-day') === targetDay) {
+          events.style.display = 'flex';
+        } else {
+          events.style.display = 'none';
+        }
+      });
+    });
+  });
+
   // Clicking an event opens registration modal with prefilled subject
-  calWidget.querySelectorAll('.cal-event-pill').forEach(pill => {
-    pill.addEventListener('click', () => {
-      const text = pill.querySelector('.cal-event-title')?.textContent || pill.textContent;
+  calWidget.querySelectorAll('.cal-event-pill, .cal-mobile-card').forEach(pill => {
+    pill.addEventListener('click', (e) => {
+      // Don't duplicate if clicking the button directly
+      if (e.target.tagName.toLowerCase() === 'button') return;
       const modal = document.getElementById('registerModal');
       const trackSelect = document.getElementById('modalTrackSelect');
       if (modal) {

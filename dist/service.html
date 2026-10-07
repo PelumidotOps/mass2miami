@@ -83,20 +83,20 @@
     <!-- Youth & Education Programs Section -->
     <section class="service-programs-section">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem;">
+        <div class="service-header-grid">
           <div>
             <h2 class="section-title">Youth & Education Programs</h2>
             <p class="section-desc">Alternative career pathways and immersive learning experiences designed for K-12 students and school districts.</p>
           </div>
           <div>
-            <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.6;">
+            <p class="service-intro-text">
               Our premier professional development series for nonprofit leaders, staff, and board members. Monthly workshops covering essential topics in organizational management, fundraising, strategic planning, governance, and mission-driven leadership.
             </p>
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-          <div class="program-cards-grid" style="margin-top: 0;">
+        <div class="service-programs-split">
+          <div class="program-cards-grid">
             <div class="program-card">
               <h4>"Teacher for a Day" Program</h4>
               <p>8-week intensive program teaching students how to start a business, understand financial fundamentals, and develop entrepreneurial thinking.</p>
@@ -117,14 +117,14 @@
               <p>Comprehensive preparation for academic success including ACT/SAT preparation, MCAS/EOC test readiness, FASFA guidance, scholarship workshops, and financial literacy for students and parents.</p>
             </div>
 
-            <div class="program-card" style="grid-column: 1 / -1;">
+            <div class="program-card program-card-full">
               <h4>Professional Development Training</h4>
               <p>Customized training modules in small business development, leadership, entrepreneurship, social responsibility, diversity & inclusion, and cultural responsiveness.</p>
             </div>
           </div>
 
-          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
-            <img src="images/union_a1850875.png" alt="Youth education pathways" style="width: 100%; height: auto; object-fit: cover;">
+          <div class="service-programs-visual">
+            <img src="images/union_a1850875.png" alt="Youth education pathways">
           </div>
         </div>
       </div>
@@ -301,6 +301,119 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <!-- Mobile Agenda Schedule View (visible on mobile only) -->
+          <div class="calendar-mobile-view">
+            <div class="cal-mobile-days-bar">
+              <button class="cal-day-chip" data-day="sun">Sun 10</button>
+              <button class="cal-day-chip active" data-day="mon">Mon 11</button>
+              <button class="cal-day-chip" data-day="tue">Tue 12</button>
+              <button class="cal-day-chip" data-day="wed">Wed 13</button>
+              <button class="cal-day-chip" data-day="thu">Thu 14</button>
+              <button class="cal-day-chip" data-day="fri">Fri 15</button>
+              <button class="cal-day-chip" data-day="sat">Sat 16</button>
+            </div>
+
+            <div class="cal-mobile-events-container">
+              <!-- Monday events (default active) -->
+              <div class="cal-day-events" data-day="mon" style="display: flex;">
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">06:00 AM - 02:00 PM</span>
+                  <h4 class="cal-mobile-title">Executive Leadership & Strategy Workshop</h4>
+                  <p class="cal-mobile-desc">Full cohort executive development and leadership capacity building.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">09:00 AM - 06:00 PM</span>
+                  <h4 class="cal-mobile-title">Community Learning Lab Intensive</h4>
+                  <p class="cal-mobile-desc">Hands-on lab training with local educators and leaders.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">10:00 AM - 03:00 PM</span>
+                  <h4 class="cal-mobile-title">K-12 Career Pathways Mentorship</h4>
+                  <p class="cal-mobile-desc">Career exploration and curriculum guidance for students and teachers.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+              </div>
+
+              <!-- Tuesday events -->
+              <div class="cal-day-events" data-day="tue" style="display: none;">
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">08:00 AM - 02:00 PM</span>
+                  <h4 class="cal-mobile-title">Nonprofit Board Governance</h4>
+                  <p class="cal-mobile-desc">Essential workshop in governance, fundraising, and mission-driven leadership.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">10:00 AM - 02:00 PM</span>
+                  <h4 class="cal-mobile-title">Academic Counseling Seminar</h4>
+                  <p class="cal-mobile-desc">Guidance for college enrollment, FAFSA, and scholarships.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+              </div>
+
+              <!-- Wednesday events -->
+              <div class="cal-day-events" data-day="wed" style="display: none;">
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">07:00 AM - 12:00 PM</span>
+                  <h4 class="cal-mobile-title">Financial Literacy & FAFSA Mastery</h4>
+                  <p class="cal-mobile-desc">Preparation and guidance for students and families.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+              </div>
+
+              <!-- Thursday events -->
+              <div class="cal-day-events" data-day="thu" style="display: none;">
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">06:00 AM - 12:00 PM</span>
+                  <h4 class="cal-mobile-title">Leadership Foundations</h4>
+                  <p class="cal-mobile-desc">Organizational change management and supervisor training.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">08:00 AM - 04:00 PM</span>
+                  <h4 class="cal-mobile-title">Civic Engagement Mentorship</h4>
+                  <p class="cal-mobile-desc">Community advocacy, youth empowerment, and cultural literacy.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">11:00 AM - 02:00 PM</span>
+                  <h4 class="cal-mobile-title">Strategic Planning Lab</h4>
+                  <p class="cal-mobile-desc">Executive planning and sustainability roadmap development.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+              </div>
+
+              <!-- Friday events -->
+              <div class="cal-day-events" data-day="fri" style="display: none;">
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">06:00 AM - 11:00 AM</span>
+                  <h4 class="cal-mobile-title">Nonprofit Executive Coaching</h4>
+                  <p class="cal-mobile-desc">One-on-one leadership consultation for executive directors.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+                <div class="cal-mobile-card">
+                  <span class="cal-mobile-time">09:00 AM - 04:00 PM</span>
+                  <h4 class="cal-mobile-title">Digital Literacy Lab</h4>
+                  <p class="cal-mobile-desc">Technology and modern tools for community organizations.</p>
+                  <button class="btn btn-primary btn-sm" data-open-modal="register">Register for Session</button>
+                </div>
+              </div>
+
+              <!-- Sunday / Saturday empty states -->
+              <div class="cal-day-events" data-day="sun" style="display: none;">
+                <div class="cal-mobile-empty">
+                  <p>No workshops scheduled for Sunday. Select another day to view available sessions.</p>
+                </div>
+              </div>
+              <div class="cal-day-events" data-day="sat" style="display: none;">
+                <div class="cal-mobile-empty">
+                  <p>No workshops scheduled for Saturday. Contact us to schedule weekend custom group sessions.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
